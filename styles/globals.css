@@ -1,0 +1,143 @@
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #182039;
+  color: #b47b82;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.pages p {
+  border: 1px solid #b47b82;
+  border-radius: 1px;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.pages p:hover {
+  cursor: pointer;
+}
+
+.pages .selectedPage {
+  color: white;
+  border-color: white;
+}
+
+.coins {
+  width: 95vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.coins .coins-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #b47b82;
+  overflow: hidden;
+}
+
+.coins .name {
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
+}
+
+.coins .symbol {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0.2rem 0 1rem 0;
+}
+
+.input {
+  margin-bottom: 1.5rem;
+}
+
+.input input {
+  background-color: #182039;
+  border: 1px solid #b47b82;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.input input::-webkit-input-placeholder {
+  color: #b47b82;
+}
+
+.input input:-ms-input-placeholder {
+  color: #b47b82;
+}
+
+.input input::-ms-input-placeholder {
+  color: #b47b82;
+}
+
+.input input::placeholder {
+  color: #b47b82;
+}
+
+.error {
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error button {
+  background-color: #182039;
+  border: 1px solid #b47b82;
+  outline: none;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #b47b82;
+}
+
+.error button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=globals.css.map */
